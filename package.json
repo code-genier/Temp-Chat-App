@@ -4,7 +4,7 @@
   "description": "templated to do list",
   "main": "chatapp.js",
   "scripts": {
-    "serve": "nodemon mainServer.js"
+    "start": "node mainServer.js"
   },
   "author": "Aayush",
   "license": "ISC",
