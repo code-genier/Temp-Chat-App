@@ -33,7 +33,8 @@ body {
   margin: 2% 0% 2% -21%;
   width: 97%;
   height: 93vh;
-  background: rgba(75, 120, 137, 0.796);
+  background: #cbcc87;
+  font-size: bold;
   border-radius: 10px;
   display: grid;
   grid-template-columns: 30% 70%;
@@ -70,7 +71,7 @@ body {
   padding: 11px;
   width: 60%;
   background: #cbcc87;
-  border-radius: 13px;
+  border-radius: 9px;
 } */
 /* #send {
   padding: 11px;
