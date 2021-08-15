@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="css/chatstyle.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="frame">
+        <div id="sidepanel">
+          <!-- side bar -->
+          <div id="contacts">
+            <div class="chat-sidebar wrap">
+              <u><h3>Temp-Chat</h3></u><br />
+              <h3><i class="fas fa-comments"></i> Room Name:</h3>
+              <h2 id="room-name"></h2>
+              <br />
+              <h3><i class="fas fa-users"></i> Users</h3>
+              <ul id="users"></ul>
+            </div>
+          </div>
+
+          <!-- //footer -->
+          <div id="bottom-bar" class="bottom">
+            <a id="leave-btn" class="btn"
+              ><i class="fas fa-trash"></i> Leave Room</a
+            >
+          </div>
+        </div>
+
+        <div class="content">
+          <div class="messages">
+            <br />
+            <div class="chat-messages" id="recieve"></div>
+            <br />
+            <div class="chat-messages" id="send"></div>
+          </div>
+
+          <div class="message-input">
+            <form class="wrap" id="chat-form">
+              <div class="fix">
+                <input
+                  id="msg"
+                  type="text"
+                  placeholder="Write your message..."
+                  required
+                  autocomplete="off"
+                />
+                <button type="submit">
+                  <i class="fas fa-paper-plane button" type="sub"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/chatscript.js"></script>
+  </body>
+</html>

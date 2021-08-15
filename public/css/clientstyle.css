@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  background: #fcde67;
+  color: #030e12;
+  font-size: 1em;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0em 0em 0.25em 0.25em;
+}
+nav li {
+  font-family: "Hind", sans-serif;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  list-style: none;
+  padding: 0em 0.9em 0em 0.5em;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+#logo {
+  font-size: 1.6em;
+  padding: 0.5em 0 0.5em 0;
+}
+
+.main {
+  color: white;
+  margin: 12% 25% 25%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #030e12;
+  border-radius: 0.4em;
+}
+h3 {
+  width: 100%;
+  font-weight: lighter;
+  font-size: 2em;
+}
+
+form {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+input {
+  padding: 10px;
+  border-radius: 0.4em;
+  margin-bottom: 0.5em;
+  border: none;
+}
+button {
+  background: #fcde67;
+  border: none;
+  border-radius: 0.4em;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1em;
+}
+@media only screen and (max-width: 1091px) {
+  .main {
+    margin-top: 20%;
+  }
+}
+@media only screen and (max-width: 854px) {
+  .main {
+    margin: 25% 10% 10%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    margin: 30% 10% 10%;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 496px) {
+  .main {
+    margin: 35% 6% 6%;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .main {
+    margin: 50% 3% 3%;
+  }
+}
