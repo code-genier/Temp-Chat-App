@@ -61,12 +61,14 @@ function outputMessage(message) {
   //if sending
 
   const div = document.createElement("div");
+  div.style.cssText = "background=#cbcc87; padding=3px; border-radius=8px;";
   div.classList.add("message");
   const p = document.createElement("p");
   p.classList.add("meta");
   p.innerText = message.username;
   div.appendChild(p);
   const para = document.createElement("p");
+  p.style.cssText = "color=rgba(91, 204, 246, 1); font-width=bold;";
   para.classList.add("text");
   para.innerText = message.text;
   div.appendChild(para);
